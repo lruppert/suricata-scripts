@@ -6,8 +6,8 @@
 #
 # If needed, we get the proxy squared away up front:
 #
-http_proxy=
-export http_proxy
+#http_proxy=
+#export http_proxy
 
 # We choose what version.
 SURICATAVERSION=1.4
@@ -31,7 +31,7 @@ if [ ! -d /var/log/suricata ]; then
 mkdir /var/log/suricata
 fi
 
-if [ ! -f /usr/local/suricata/current ]; then
+if [ ! -h /usr/local/suricata/current ]; then
 ln -s /usr/local/suricata/${SURICATAVERSION} /usr/local/suricata/current
 fi
 #
