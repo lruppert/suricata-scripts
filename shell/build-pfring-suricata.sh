@@ -10,7 +10,7 @@ http_proxy=
 export http_proxy
 
 # We choose what version.
-SURICATAVERSION=1.4rc1
+SURICATAVERSION=1.4
 #
 
 #
